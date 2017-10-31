@@ -1,1 +1,173 @@
-haha
+Last login: Tue Oct 31 16:09:59 on ttys000
+linchengyangde-MacBook-Pro:~ denlin$ ssh luffy.ee.ncku.edu.tw
+denlin@luffy.ee.ncku.edu.tw's password: 
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 4.2.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+ 139 packages can be updated.
+ 106 updates are security updates.
+
+ New release '16.04.3 LTS' available.
+ Run 'do-release-upgrade' to upgrade to it.
+
+
+ WARNING: Security updates for your current Hardware Enablement Stack
+ ended on 2016-08-04:
+  * http://wiki.ubuntu.com/1404_HWE_EOL
+
+  There is a graphics stack installed on this system. An upgrade to a
+  configuration supported for the full lifetime of the LTS will become
+  available on 2016-07-21 and can be installed by running 'update-manager'
+  in the Dash.
+      
+      Last login: Tue Oct 31 16:10:12 2017 from 140.116.32.12
+      denlin@luffy:~
+      $ cd git
+      denlin@luffy:~/git
+      $ ls
+      About  gg  gg2  resume  wp2017-1
+      denlin@luffy:~/git
+      $ git clone https://github.com/denvlin/wp2017.git
+      Cloning into 'wp2017'...
+      remote: Counting objects: 3, done.
+      remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+      Unpacking objects: 100% (3/3), done.
+      Checking connectivity... done.
+      denlin@luffy:~/git
+      $ cd wp2017
+      denlin@luffy:~/git/wp2017(master 0m)
+      $ ls
+      README.md
+      denlin@luffy:~/git/wp2017(master 1m)
+      $ git checkout --orphan gh-pages
+      Switched to a new branch 'gh-pages'
+      denlin@luffy:~/git/wp2017
+      $ vi index.html
+      denlin@luffy:~/git/wp2017
+      $ git add .
+      denlin@luffy:~/git/wp2017
+      $ git commit -m "new"
+      [gh-pages (root-commit) 03bca41] new
+       2 files changed, 3 insertions(+)
+        create mode 100644 README.md
+         create mode 100644 index.html
+         denlin@luffy:~/git/wp2017(gh-pages 0m)
+         $ git push
+         warning: push.default is unset; its implicit value is changing in
+         Git 2.0 from 'matching' to 'simple'. To squelch this message
+         and maintain the current behavior after the default changes, use:
+
+           git config --global push.default matching
+
+           To squelch this message and adopt the new behavior now, use:
+
+             git config --global push.default simple
+
+             When push.default is set to 'matching', git will push local branches
+             to the remote branches that already exist with the same name.
+
+             In Git 2.0, Git will default to the more conservative 'simple'
+             behavior, which only pushes the current branch to the corresponding
+             remote branch that 'git pull' uses to update the current branch.
+
+             See 'git help config' and search for 'push.default' for further information.
+             (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+             'current' instead of 'simple' if you sometimes use older versions of Git)
+
+             Username for 'https://github.com': denvlin
+             Password for 'https://denvlin@github.com': 
+             Everything up-to-date
+             denlin@luffy:~/git/wp2017(gh-pages 0m)
+             $ git config --global user.email "[dunkyoulin@gmail.com]"
+             denlin@luffy:~/git/wp2017(gh-pages 0m)
+             $ git config --global user.name "[denvlin]"
+             denlin@luffy:~/git/wp2017(gh-pages 1m)
+             $ ls
+             README.md  index.html
+             denlin@luffy:~/git/wp2017(gh-pages 3m)
+             $ vi index.html
+             denlin@luffy:~/git/wp2017(gh-pages 3m)
+             $ git add .
+             denlin@luffy:~/git/wp2017(gh-pages 3m)
+             $ git commit -m "gh-branch"
+             On branch gh-pages
+             nothing to commit, working directory clean
+             denlin@luffy:~/git/wp2017(gh-pages 4m)
+             $ git push origin gh-pages
+             Username for 'https://github.com': denvlin
+             Password for 'https://denvlin@github.com': 
+             Counting objects: 4, done.
+             Delta compression using up to 8 threads.
+             Compressing objects: 100% (2/2), done.
+             Writing objects: 100% (3/3), 244 bytes | 0 bytes/s, done.
+             Total 3 (delta 0), reused 0 (delta 0)
+             To https://github.com/denvlin/wp2017.git
+              * [new branch]      gh-pages -> gh-pages
+              denlin@luffy:~/git/wp2017(gh-pages 4m)
+              $ git add .
+              denlin@luffy:~/git/wp2017(gh-pages 8m)
+              $ git commit -m "denlin2"
+              [gh-pages 8872b88] denlin2
+               6 files changed, 188 insertions(+)
+                create mode 100644 denlin2.html
+                 create mode 100644 menu.png
+                  create mode 100644 pic1d.png
+                   create mode 100644 pic1u.png
+                    create mode 100644 pic2l.png
+                     create mode 100644 pic2r.png
+                     denlin@luffy:~/git/wp2017(gh-pages 0m)
+                     $ git push origin gh-pages
+                     Username for 'https://github.com': denvlin
+                     Password for 'https://denvlin@github.com': 
+                     Counting objects: 10, done.
+                     Delta compression using up to 8 threads.
+                     Compressing objects: 100% (8/8), done.
+                     Writing objects: 100% (8/8), 72.70 KiB | 0 bytes/s, done.
+                     Total 8 (delta 0), reused 0 (delta 0)
+                     To https://github.com/denvlin/wp2017.git
+                        03bca41..8872b88  gh-pages -> gh-pages
+                        denlin@luffy:~/git/wp2017(gh-pages 0m)
+                        $ vi denlin2.html
+
+                        <!DOCTYPE html>                                                      
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>Den Lin's Resume</title> 
+
+
+                        </head>
+
+                        <style>
+                        html, body, div, span, applet, object, iframe,
+                        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+                        a, abbr, acronym, address, big, cite, code,
+                        del, dfn, em, img, ins, kbd, q, s, samp,
+                        small, strike, strong, sub, sup, tt, var,
+                        b, u, i, center,
+                        dl, dt, dd, ol, ul, li,
+                        fieldset, form, label, legend,
+                        table, caption, tbody, tfoot, thead, tr, th, td,
+                        article, aside, canvas, details, embed, 
+                        figure, figcaption, footer, header, hgroup,
+                        menu, nav, output, ruby, section, summary,
+                        time, mark, audio, video {
+                          margin: 0;
+                            padding: 0;
+                              border: 0;
+                                font-size: 100%;
+                                  font: inherit;
+                                    vertical-align: baseline;
+                                    }
+                                        
+
+                                            .con{
+                                                    width: 100%;
+                                                            height: 1000px;
+                                                                    background: #AAA;
+
+                                                                        }
+                                                                            .left{
+                                                                            -- 插入 --                                         1,1          頂端
+
